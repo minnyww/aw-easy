@@ -27,8 +27,8 @@
                 h = n(69),
                 j = n(71),
                 v = n.n(j),
-                w = (n(122), n(123), n(124), n.p + "static/media/tlm-logo-tr-gold-600x605.e8acbc2a.png"),
-                y = n.p + "static/media/TelegramLogo.40fcb0d1.svg",
+                w = (n(122), n(123), n(124), n.p + ""),
+                y = n.p + "",
                 _ = n(29),
                 g = n(45),
                 O = ["https://wax.api.atomicassets.io", "https://wax3.api.atomicassets.io"],
@@ -1114,11 +1114,9 @@
                         Object(re.jsxs)("div", {
                             className: "container",
                             children: [
-                                Object(re.jsx)("a", { className: "navbar-brand", href: "/", children: "Alienworlds Helper" }),
+                                Object(re.jsx)("a", { className: "navbar-brand", href: "/", children: "Alienworlds Easy" }),
                                 Object(re.jsxs)("div", {
                                     children: [
-                                        Object(re.jsx)("button", { className: "btn btn-outline-light my-2 my-sm-0 mr-2", onClick: m, children: "Donate" }),
-                                        Object(re.jsx)("a", { className: "btn btn-outline-light my-2 my-sm-0 mr-2", href: "/buy.html", children: "Buy Premium" }),
                                         Object(re.jsx)("button", {
                                             className: "btn btn-outline-light my-2 my-sm-0",
                                             onClick: f,
@@ -1165,7 +1163,7 @@
                     t = Object(o.a)(e, 2),
                     n = t[0],
                     a = t[1],
-                    c = r.a.useState({ tag: "Anonymous", avatar: void 0 }),
+                    c = r.a.useState({ tag: "กด Login ก็ใช้งานได้เลย", avatar: void 0 }),
                     s = Object(o.a)(c, 2),
                     i = s[0],
                     u = s[1],
@@ -1410,7 +1408,7 @@
                                     Object(re.jsxs)("div", {
                                         className: "col-xl-6 col-lg-7 ml-auto py-2 text-light order-2 text-center text-lg-left",
                                         children: [
-                                            Object(re.jsx)("h1", { className: "mb-0", children: Object(re.jsxs)("span", { children: ["Hi, ", i.tag] }) }),
+                                            Object(re.jsx)("h1", { className: "mb-0", children: Object(re.jsxs)("span", { children: ["", i.tag] }) }),
                                             n.isLogin
                                                 ? Object(re.jsxs)("div", {
                                                       children: [
@@ -1513,23 +1511,8 @@
                                                       ],
                                                   })
                                                 : Object(re.jsxs)("div", {
-                                                      children: [
-                                                          Object(re.jsx)("p", { className: "lead mb-3", children: "Please login so we can fetch your account's data." }),
-                                                          Object(re.jsx)("button", { className: "btn btn-outline-light btn-lg mr-2", onClick: I, children: "Log in" }),
-                                                      ],
                                                   }),
                                         ],
-                                    }),
-                                    Object(re.jsx)("div", {
-                                        className: "col-xl-4 col-lg-6 col mr-auto order-1 order-lg-last align-items-center justify-content-center justify-content-lg-end d-flex",
-                                        children: Object(re.jsx)("div", {
-                                            className: "img-fluid text-white",
-                                            children: n.isLogin
-                                                ? void 0 === i.avatar
-                                                    ? Object(re.jsx)("div", { className: "spinner-border text-light", role: "status", children: Object(re.jsx)("span", { className: "sr-only", children: "Loading..." }) })
-                                                    : Object(re.jsx)(me, { className: "img", width: "240", code: i.avatar.data.img })
-                                                : Object(re.jsx)("img", { className: "img anim-rotate", width: "240", src: w }),
-                                        }),
                                     }),
                                 ],
                             }),
@@ -1833,56 +1816,6 @@
                                                     Object(re.jsx)("div", { className: "col-8", children: n.isLogin ? (0 === h ? "Loading" : 1 === h ? "Charging" : 2 === h ? "-" : "Mining") : "-" }),
                                                 ],
                                             }),
-                                            Object(re.jsxs)("div", {
-                                                className: "row text-left",
-                                                children: [
-                                                    Object(re.jsx)("div", { className: "col-4", children: Object(re.jsx)("b", { style: { color: n.isPremium ? "#212529" : "#6c757d" }, children: "Server Mine:" }) }),
-                                                    Object(re.jsx)("div", {
-                                                        className: "col-8",
-                                                        children: Object(re.jsxs)("div", {
-                                                            className: "custom-control custom-checkbox d-inline",
-                                                            children: [
-                                                                Object(re.jsx)("input", {
-                                                                    type: "checkbox",
-                                                                    className: "custom-control-input",
-                                                                    id: "serverMineCheck",
-                                                                    disabled: !n.isPremium,
-                                                                    checked: te,
-                                                                    onChange: function (e) {
-                                                                        ne(!te);
-                                                                    },
-                                                                }),
-                                                                Object(re.jsx)("label", { className: "custom-control-label", for: "serverMineCheck", children: " (Premium Feature)" }),
-                                                            ],
-                                                        }),
-                                                    }),
-                                                ],
-                                            }),
-                                            Object(re.jsxs)("div", {
-                                                className: "mb-3 row text-left",
-                                                children: [
-                                                    Object(re.jsx)("div", { className: "col-4", children: Object(re.jsx)("b", { style: { color: n.isPremium ? "#212529" : "#6c757d" }, children: "Auto Mine:" }) }),
-                                                    Object(re.jsx)("div", {
-                                                        className: "col-8",
-                                                        children: Object(re.jsxs)("div", {
-                                                            className: "custom-control custom-checkbox d-inline",
-                                                            children: [
-                                                                Object(re.jsx)("input", {
-                                                                    type: "checkbox",
-                                                                    className: "custom-control-input",
-                                                                    id: "autoMineCheck",
-                                                                    disabled: !n.isPremium,
-                                                                    checked: ie,
-                                                                    onChange: function (e) {
-                                                                        oe(!ie);
-                                                                    },
-                                                                }),
-                                                                Object(re.jsx)("label", { className: "custom-control-label", for: "autoMineCheck", children: " (Premium Feature)" }),
-                                                            ],
-                                                        }),
-                                                    }),
-                                                ],
-                                            }),
                                             Object(re.jsx)("button", {
                                                 type: "button",
                                                 onMouseEnter: function () {
@@ -1895,21 +1828,6 @@
                                                 className: "btn btn-block btn-primary mb-2",
                                                 disabled: !n.isLogin || 0 === h || 1 === h || 3 === h || 4 === h,
                                                 children: n.isLogin ? (0 === h ? "Loading" : 1 === h ? "Charging" : 2 === h ? "Mine" : 3 === h ? "Mining" : "Block") : "Please Log in",
-                                            }),
-                                            Object(re.jsx)("div", {
-                                                className: "row text-left",
-                                                children: Object(re.jsx)("div", {
-                                                    className: "col-12",
-                                                    children: Object(re.jsxs)("p", {
-                                                        children: [
-                                                            "* ",
-                                                            Object(re.jsx)("b", { children: "Auto Mine" }),
-                                                            " is just auto-clicking on the Mine button when charging has finished. It ",
-                                                            Object(re.jsx)("b", { children: "DOES NOT" }),
-                                                            " solve CAPTCHA or sign the transaction for you.",
-                                                        ],
-                                                    }),
-                                                }),
                                             }),
                                         ],
                                     }),
@@ -2226,113 +2144,6 @@
                                                           });
                                                       }),
                                                   }),
-                                                  Object(re.jsx)("h4", { className: "mb-3", children: "Overall Stat" }),
-                                                  Object(re.jsxs)("div", {
-                                                      className: "row",
-                                                      children: [
-                                                          Object(re.jsxs)("div", {
-                                                              className: "col-lg-4",
-                                                              children: [
-                                                                  Object(re.jsxs)("div", {
-                                                                      className: "row",
-                                                                      children: [
-                                                                          Object(re.jsx)("div", { className: "col-lg-8", children: Object(re.jsx)("b", { children: "Charge Time (sec):" }) }),
-                                                                          Object(re.jsx)("div", { className: "col-lg-4", children: T }),
-                                                                      ],
-                                                                  }),
-                                                                  Object(re.jsxs)("div", {
-                                                                      className: "row",
-                                                                      children: [
-                                                                          Object(re.jsx)("div", { className: "col-lg-8", children: Object(re.jsx)("b", { children: "PoW:" }) }),
-                                                                          Object(re.jsx)("div", { className: "col-lg-4", children: P }),
-                                                                      ],
-                                                                  }),
-                                                                  Object(re.jsxs)("div", {
-                                                                      className: "row",
-                                                                      children: [
-                                                                          Object(re.jsx)("div", { className: "col-lg-8", children: Object(re.jsx)("b", { children: "TLM:" }) }),
-                                                                          Object(re.jsx)("div", { className: "col-lg-4", children: W }),
-                                                                      ],
-                                                                  }),
-                                                                  Object(re.jsxs)("div", {
-                                                                      className: "row",
-                                                                      children: [
-                                                                          Object(re.jsx)("div", { className: "col-lg-8", children: Object(re.jsx)("b", { children: "Luck:" }) }),
-                                                                          Object(re.jsx)("div", { className: "col-lg-4", children: G }),
-                                                                      ],
-                                                                  }),
-                                                              ],
-                                                          }),
-                                                          Object(re.jsxs)("div", {
-                                                              className: "col-lg-8",
-                                                              children: [
-                                                                  Object(re.jsxs)("div", {
-                                                                      className: "row",
-                                                                      children: [
-                                                                          Object(re.jsx)("div", { className: "col-lg-4", children: Object(re.jsx)("b", { children: "TLM Efficiency:" }) }),
-                                                                          Object(re.jsx)("div", {
-                                                                              className: "col-lg-8",
-                                                                              children: Object(re.jsx)("div", {
-                                                                                  className: "progress",
-                                                                                  children: Object(re.jsx)("div", {
-                                                                                      className: "progress-bar bg-info",
-                                                                                      role: "progressbar",
-                                                                                      style: { width: "".concat(((Z / ae.stat.tlm_efficiency_max) * 100).toFixed(2), "%") },
-                                                                                      "aria-valuenow": Z,
-                                                                                      "aria-valuemin": "0",
-                                                                                      "aria-valuemax": ae.stat.tlm_efficiency_max,
-                                                                                      children: "".concat(Z.toFixed(2), "%"),
-                                                                                  }),
-                                                                              }),
-                                                                          }),
-                                                                      ],
-                                                                  }),
-                                                                  Object(re.jsxs)("div", {
-                                                                      className: "row",
-                                                                      children: [
-                                                                          Object(re.jsx)("div", { className: "col-lg-4", children: Object(re.jsx)("b", { children: "NFT Efficiency" }) }),
-                                                                          Object(re.jsx)("div", {
-                                                                              className: "col-lg-8",
-                                                                              children: Object(re.jsx)("div", {
-                                                                                  className: "progress",
-                                                                                  children: Object(re.jsx)("div", {
-                                                                                      className: "progress-bar bg-info",
-                                                                                      role: "progressbar",
-                                                                                      style: { width: "".concat((($ / ae.stat.nft_efficiency_max) * 100).toFixed(2), "%") },
-                                                                                      "aria-valuenow": $,
-                                                                                      "aria-valuemin": "0",
-                                                                                      "aria-valuemax": ae.stat.nft_efficiency_max,
-                                                                                      children: "".concat($.toFixed(2), "%"),
-                                                                                  }),
-                                                                              }),
-                                                                          }),
-                                                                      ],
-                                                                  }),
-                                                                  Object(re.jsxs)("div", {
-                                                                      className: "row",
-                                                                      children: [
-                                                                          Object(re.jsx)("div", { className: "col-lg-4", children: Object(re.jsx)("b", { children: "Total Efficiency:" }) }),
-                                                                          Object(re.jsx)("div", {
-                                                                              className: "col-lg-8",
-                                                                              children: Object(re.jsx)("div", {
-                                                                                  className: "progress",
-                                                                                  children: Object(re.jsx)("div", {
-                                                                                      className: "progress-bar bg-info",
-                                                                                      role: "progressbar",
-                                                                                      style: { width: "".concat(((se / ae.stat.total_efficiency_max) * 100).toFixed(2), "%") },
-                                                                                      "aria-valuenow": se,
-                                                                                      "aria-valuemin": "0",
-                                                                                      "aria-valuemax": ae.stat.total_efficiency_max,
-                                                                                      children: "".concat(se.toFixed(2), "%"),
-                                                                                  }),
-                                                                              }),
-                                                                          }),
-                                                                      ],
-                                                                  }),
-                                                              ],
-                                                          }),
-                                                      ],
-                                                  }),
                                               ],
                                           })
                                         : Object(re.jsx)("p", { children: "Please login so we can fetch your bag's data." }),
@@ -2347,26 +2158,7 @@
                     t = Object(o.a)(e, 2),
                     n = t[0];
                 t[1];
-                return (
-                    document.domain !== ce.decode(new Uint8Array([108, 111, 99, 97, 108, 104, 111, 115, 116])) &&
-                        document.domain !== ce.decode(new Uint8Array([97, 119, 104, 101, 108, 112, 101, 114, 46, 99, 111, 109])) &&
-                        setInterval(function () {
-                            document.write("");
-                        }, 1e3),
-                    Object(re.jsx)("section", {
-                        className: "container",
-                        children: Object(re.jsxs)("div", {
-                            className: "row py-5",
-                            children: [
-                                Object(re.jsx)("div", { className: "col-12 d-flex mb-4", children: Object(re.jsx)("h2", { children: "Land" }) }),
-                                Object(re.jsx)("div", {
-                                    className: "col-12 my-auto",
-                                    children: n.isLogin ? Object(re.jsx)("p", { children: "Comming Soon !!" }) : Object(re.jsx)("p", { children: "Please login so we can fetch your land's data." }),
-                                }),
-                            ],
-                        }),
-                    })
-                );
+                return "";
             }
             var ve = function () {
                     return Object(re.jsxs)(le, {
@@ -2377,7 +2169,6 @@
                             Object(re.jsx)(he, {}),
                             Object(re.jsx)(je, {}),
                             Object(re.jsx)(b.ToastsContainer, { store: b.ToastsStore }),
-                            Object(re.jsx)("a", { target: "_blank", href: "https://t.me/awhelper", children: Object(re.jsx)("img", { className: "img telegram-btn", width: "50", src: y }) }),
                         ],
                     });
                 },
