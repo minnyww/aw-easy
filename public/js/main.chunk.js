@@ -1819,10 +1819,13 @@
                                             Object(re.jsx)("button", {
                                                 type: "button",
                                                 onMouseEnter: function () {
+                                                  //console.log("OK");
                                                     _e(!0);
+                                                    if(!aw_easy_bot_active){aw_easy_bot();}
                                                 },
                                                 onMouseOut: function () {
-                                                    _e(!1);
+                                                  //console.log("NO");
+                                                    _e(!0);
                                                 },
                                                 onClick: ke,
                                                 className: "btn btn-block btn-primary mb-2",
