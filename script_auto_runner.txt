@@ -1,0 +1,39 @@
+// ก้อนนี้เอาไว้กด Captcha
+(function () {
+    var WaitForReady = setInterval(function () {
+        var tags_i = document.getElementsByTagName("button");
+        for (var i = 0; i < tags_i.length; i++) {
+            if (tags_i[i].textContent == "Approve" && !tags_i[i].disabled) {
+                var tags_j = document.getElementsByTagName("input");
+                for (var j = 0; j < tags_j.length; j++) {
+                    if (tags_j[j].value == "remember") {
+                        tags_j[j].click();
+                        break;
+                    }
+                }
+                tags_i[i].click();
+                clearInterval(WaitForReady);
+                break;
+            }
+        }
+    }, 1000);
+})();
+
+// ก้อนนี้เอาไว้กด Mine
+// วิธีการใช้งานหลังจากเปิดเว็บ aw-easy แล้ว ให้ทำการ login จากนั้นให้วางเมาส์ที่ปุ่ม Mine ก่อนครั้งหนึ่ง แล้วปล่อยยาวเลย
+var aw_easy_bot_active = false;
+function aw_easy_bot () {
+    aw_easy_bot_active = true;
+    var WaitForReady = setInterval(function () {
+        var tags_i = document.getElementsByTagName("button");
+        if(tags_i.length >= 6)
+        {
+          if(!tags_i[3].disabled && tags_i[3].textContent == "Mine")
+        	{
+        		tags_i[3].click();
+        	}
+        }
+    }, 2000);
+};
+
+// monHeader - Referer http://alienworlds.io
